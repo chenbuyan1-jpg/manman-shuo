@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>慢慢说｜作品封面</title>
+    <style>
+      :root {
+        --paper: #fbfaf6;
+        --ink: #17211d;
+        --green: #0f4f41;
+        --soft: #edf7f2;
+        --blue: #326ec8;
+        --red: #b93a32;
+        --yellow: #fff4c7;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        display: grid;
+        place-items: center;
+        min-height: 100vh;
+        margin: 0;
+        background: #e8eee9;
+        font-family:
+          "PingFang SC",
+          "Hiragino Sans GB",
+          "Microsoft YaHei",
+          system-ui,
+          sans-serif;
+        color: var(--ink);
+      }
+
+      .poster {
+        position: relative;
+        width: 1200px;
+        height: 675px;
+        overflow: hidden;
+        background:
+          linear-gradient(90deg, rgba(15, 79, 65, 0.07) 1px, transparent 1px),
+          linear-gradient(180deg, rgba(50, 110, 200, 0.06) 1px, transparent 1px),
+          var(--paper);
+        background-size: 34px 34px;
+        border: 1px solid #d8dfda;
+      }
+
+      .content {
+        position: absolute;
+        inset: 54px 58px;
+        display: grid;
+        grid-template-columns: 1fr 420px;
+        gap: 42px;
+        align-items: center;
+      }
+
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 18px;
+        margin-bottom: 42px;
+      }
+
+      .mark {
+        display: grid;
+        place-items: center;
+        width: 74px;
+        height: 74px;
+        border-radius: 10px;
+        color: var(--paper);
+        background: var(--green);
+        font-size: 38px;
+        font-weight: 900;
+      }
+
+      .brand span {
+        display: block;
+        color: #21735b;
+        font-size: 22px;
+        font-weight: 900;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: 86px;
+        line-height: 1;
+        letter-spacing: 0;
+      }
+
+      .headline {
+        max-width: 660px;
+        margin: 0;
+        font-size: 44px;
+        line-height: 1.25;
+        font-weight: 900;
+      }
+
+      .sub {
+        max-width: 680px;
+        margin: 28px 0 0;
+        color: #4e5f59;
+        font-size: 26px;
+        line-height: 1.45;
+        font-weight: 700;
+      }
+
+      .chips {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-top: 36px;
+      }
+
+      .chip {
+        padding: 10px 14px;
+        border-radius: 8px;
+        color: #fff;
+        background: var(--green);
+        font-size: 20px;
+        font-weight: 900;
+      }
+
+      .chip:nth-child(2) {
+        background: var(--blue);
+      }
+
+      .chip:nth-child(3) {
+        background: var(--red);
+      }
+
+      .phone {
+        width: 390px;
+        height: 610px;
+        padding: 18px;
+        border: 10px solid #1f2724;
+        border-radius: 34px;
+        background: #f8f8f4;
+        box-shadow: 0 28px 70px rgba(20, 31, 27, 0.22);
+      }
+
+      .bar {
+        display: flex;
+        justify-content: space-between;
+        color: #fff;
+        margin: -18px -18px 18px;
+        padding: 13px 20px;
+        background: #1f2724;
+        font-size: 16px;
+        font-weight: 900;
+      }
+
+      .sms,
+      .result,
+      .family {
+        border-radius: 8px;
+        background: #fff;
+      }
+
+      .sms {
+        padding: 16px;
+        border: 1px solid #dfe4df;
+        font-size: 22px;
+        line-height: 1.45;
+        font-weight: 800;
+      }
+
+      .result {
+        margin-top: 16px;
+        padding: 16px;
+        border: 2px solid rgba(185, 58, 50, 0.26);
+        background: #fff0ed;
+      }
+
+      .result strong {
+        display: block;
+        padding: 14px;
+        border-radius: 8px;
+        color: #fff;
+        background: var(--red);
+        font-size: 28px;
+      }
+
+      .result p {
+        margin: 14px 0 0;
+        font-size: 21px;
+        line-height: 1.5;
+        font-weight: 800;
+      }
+
+      .family {
+        margin-top: 16px;
+        padding: 14px;
+        border: 1px solid #dfe4df;
+        font-size: 20px;
+        line-height: 1.45;
+        font-weight: 800;
+      }
+
+      .footer {
+        position: absolute;
+        left: 58px;
+        bottom: 32px;
+        color: #66746f;
+        font-size: 20px;
+        font-weight: 800;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="poster">
+      <section class="content">
+        <div>
+          <div class="brand">
+            <div class="mark">慢</div>
+            <div>
+              <span>AI 生活翻译器</span>
+              <h1>慢慢说</h1>
+            </div>
+          </div>
+          <p class="headline">让老人重新听懂手机</p>
+          <p class="sub">
+            把医保短信、验证码、陌生链接和复杂页面，翻译成老人看得懂、听得懂、敢操作的话。
+          </p>
+          <div class="chips">
+            <div class="chip">智慧助老</div>
+            <div class="chip">适老化解释</div>
+            <div class="chip">反诈提醒</div>
+          </div>
+        </div>
+
+        <div class="phone">
+          <div class="bar">
+            <span>9:41</span>
+            <span>4G 62%</span>
+          </div>
+          <div class="sms">
+            【医保通知】您的医保账户异常，请点击链接完成认证。
+          </div>
+          <div class="result">
+            <strong>可能有风险</strong>
+            <p>先不要点陌生链接，也不要输入验证码。我们一步一步慢慢看。</p>
+          </div>
+          <div class="family">
+            已整理给家人：我收到一条医保异常短信，你帮我看一下。
+          </div>
+        </div>
+      </section>
+      <div class="footer">不是替老人使用手机，而是让老人重新听懂手机。</div>
+    </main>
+  </body>
+</html>
+

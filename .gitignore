@@ -1,0 +1,5 @@
+.env*.local
+.next*
+.netlify
+node_modules
+*.tsbuildinfo
