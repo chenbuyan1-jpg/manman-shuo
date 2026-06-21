@@ -1,6 +1,6 @@
 [build]
   command = "npm run build"
-  publish = ".next-manman"
+  publish = ".next"
 
 [build.environment]
   NODE_VERSION = "20"
